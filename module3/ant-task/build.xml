@@ -62,7 +62,7 @@
 	<delete dir="${dist}"/>
 </target>
 
-<target name="zip" >
+<target name="zip" depends="dist">
 	<echo>Creating an archive myapp.jar.zip</echo>
 	<zip destfile="${proj}/myapp.jar.zip" basedir="${proj}"/>
 </target>
