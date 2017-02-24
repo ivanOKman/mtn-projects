@@ -7,7 +7,7 @@
 <property name="dist" value="dist"/>
 <property name="proj" value="dist/proj"/>
 
-<target name="init" >
+<target name="init" depends="clean" >
 	<echo>Creating a build directory</echo>
 	<mkdir dir="${build}"/>
 </target>
@@ -62,7 +62,7 @@
 	<delete dir="${dist}"/>
 </target>
 
-<target name="zip" depends="dist">
+<target name="zip" >
 	<echo>Creating an archive myapp.jar.zip</echo>
 	<zip destfile="${proj}/myapp.jar.zip" basedir="${proj}"/>
 </target>
