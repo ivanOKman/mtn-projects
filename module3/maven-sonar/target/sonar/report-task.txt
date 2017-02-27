@@ -1,0 +1,5 @@
+projectKey=com.test:app-sonar
+serverUrl=http://sonar
+dashboardUrl=http://sonar/dashboard/index/com.test:app-sonar
+ceTaskId=AVp_xW9O4ndv8S7nCYHy
+ceTaskUrl=http://sonar/api/ce/task?id=AVp_xW9O4ndv8S7nCYHy

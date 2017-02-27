@@ -1,0 +1,15 @@
+<assembly>
+    <id>assembly</id>
+    <formats>
+        <format>tar</format>
+    </formats>
+
+    <includeBaseDirectory>false</includeBaseDirectory>
+    	<fileSets>
+    	    <fileSet>
+    	   	 <includes>
+			<include>${project.build.directory}/*.jar</include>
+	   	 </includes>
+	    </fileSet>
+	</fileSets>
+</assembly>
